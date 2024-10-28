@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    background: #eaeaea;
+}
+
+.content {
+    margin-left: 90px;
+    transition: all 0.4s ease;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 90px;
+    background: #495057;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px 15px;
+    transition: all 0.4s ease;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-header img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+.sidebar-header h2 {
+    color: white;
+    margin-left: 20px;
+}
+
+.sidebar:hover {
+    width: 260px;
+    transition: all 0.4s ease;
+}
+
+.sidebar:hover ~ .content {
+    margin-left: 260px;
+}
+
+.links {
+    list-style-type: none;
+    padding-top: 20px;
+}
+
+.links li a {
+    display: flex;
+    align-items: center;
+    padding: 8px 20px;
+    color: #eaeaea;
+    font-weight: 400;
+    gap: 0 31px;
+    white-space: nowrap;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.links li a:hover {
+    background: #585e65;
+    color: white;
+    border-radius: 5px;
+}
+
+.cart {
+    padding-top: 560px;
+}
+
+.image-container{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    border-bottom: solid black;
+}
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.flexbox{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+.form-container{
+    width: 50%;
+    text-align: center;
+}
+.form-container form{
+    background: #dcdbdb;
+    height: 600px;
+    margin: 20px;
+    border-radius: 10px;
+    border: solid black;
+}
+.form-container form label{
+    font-size: 2.3rem;
+    font-weight: 250;
+}
+.question-input{
+    margin: 10px;
+    font-size: 2rem;
+    font-weight: 150;
+}
+.email-input{
+    margin: 10px;
+    font-size: 2rem;
+    font-weight: 150;
+}
+.submit-button{
+    padding: 16px 42px;
+    border-radius: 3px;
+    box-shadow: 0 0 12px -2px rgba(0,0,0,0.5);
+    line-height: 1.25;
+    background: #fd6300;
+    text-decoration: none;
+    user-select: none;
+    color: white;
+    font-size: 16px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    position: relative;
+    transition: background-color .6s ease;
+    overflow: hidden;
+    margin: 5px;
+}
+.submit-button:hover{
+    background: #fd8700;
+}
+
+.error{
+    font-size: 1.5rem;
+    font-weight: 250;
+    display: none;
+    color: red;
+}
+.invalid{
+    border: 1px solid red;
+}
+.FAQ{
+    width: 50%;
+    text-align: center;
+}
+.FAQ ul{
+    list-style-type: none;
+}
+.footer{
+    background: #bababa;
+    color: #000000;
+    margin-left: 90px;
+    display: flex;
+}
+.footer-container{
+    margin: 5px;
+    padding-left: 30px;
+    width: 50%;
+    text-align: center;
+}
+
+.footer-container li{
+    display: flex;
+    align-items: center;
+    padding: 8px 20px;
+    color: #000000;
+    font-weight: 400;
+    gap: 0 31px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.footer-container li a{
+    font-weight: 400;
+    text-decoration: none;
+    color: #000000;
+}
+
+@media print {
+    * {
+        font-family: "Times New Roman", Times, serif;
+    }
+    .sidebar{
+        opacity: 0;
+    }
+    .content{
+        margin-left: 0;
+    }
+    .content-header{
+        position: relative;
+    }
+}

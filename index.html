@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sklep Sportowy-Pytania</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <img
+                    src="https://img.freepik.com/free-vector/abstract-silhouette-sport-logo-flat-design_23-2148220451.jpg?t=st=1729035016~exp=1729038616~hmac=e03adb43ba0351d33b324e5fab26dd29c5a389e85bf16280cefc22fb3c958354&w=826"
+                    alt="logo">
+            <h2>Sklep Sportowy</h2>
+        </div>
+        <ul class="links none">
+            <li>
+                <a href="#">
+                <span class="material-symbols-outlined">
+                search
+                </span>
+                    Wyszukaj
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <span class="material-symbols-outlined">
+                sports_soccer
+                </span>
+                    Piłka nożna
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <span class="material-symbols-outlined">
+                sports_basketball
+                </span>
+                    Koszykówka
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <span class="material-symbols-outlined">
+                sports_football
+                </span>
+                    Football
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <span class="material-symbols-outlined">
+                sports_tennis
+                </span>
+                    Tenis
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <span class="material-symbols-outlined">
+                contact_support
+                </span>
+                    Pytania
+                </a>
+            </li>
+            <li class="cart">
+                <a href="#">
+            <span class="material-symbols-outlined">
+                shopping_cart
+                </span>
+                    Koszyk
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <div class="content">
+        <div class="image-container">
+            <img src="https://www.shutterstock.com/shutterstock/photos/2128372238/display_1500/stock-vector-large-and-small-question-mark-chaotic-pattern-with-questions-black-and-white-graphic-random-2128372238.jpg"
+                 alt="znaki_zapytania">
+        </div>
+        <div class="flexbox">
+            <div class="form-container">
+                <h1>Zadaj nam pytanie</h1>
+                <form id="questionForm" action="/submit">
+                    <label for="question">Pytanie:</label>
+                    <br>
+                    <textarea class="question-input" name="question" id="question" cols="40" rows="5" required></textarea>
+                    <br>
+                    <span id="questionError" class="error">Pytanie musi mieć od 2 do 60 znaków</span>
+                    <br>
+                    <label for="email">Email:</label>
+                    <br>
+                    <input class="email-input" type="text" id="email" name="email" required>
+                    <br>
+                    <span id="emailError" class="error">Wprowadź poprawny email</span>
+                    <br>
+                    <button class="submit-button" type="submit">Wyślij</button>
+                    <br>
+                    <div id="summaryError" class="error">Proszę wypełnić wszystkie pola prawidłowo.</div>
+                </form>
+            </div>
+            <div class="FAQ">
+                <h2>Najczęstrze pytania</h2>
+                <ul>
+                    <li>
+                        <p>Czy ...</p>
+                    </li>
+                    <li>
+                        <p>Czy ...</p>
+                    </li>
+                    <li>
+                        <p>Czy ...</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer-container">
+        <h4>Kontakt:</h4>
+        <ul>
+            <li>
+                <span class="material-symbols-outlined">
+                phone
+                </span>
+                (+48) 123456789
+            </li>
+            <li>
+                <span class="material-symbols-outlined">
+                mail
+                </span>
+                sklep@sport.pl
+            </li>
+        </ul>
+    </div>
+    <div class="footer-container">
+        <h4>Linki:</h4>
+        <ul>
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#">O nas</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>
